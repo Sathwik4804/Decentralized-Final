@@ -1,3 +1,10 @@
+import asyncHandler from 'express-async-handler';
+import bcrypt from 'bcryptjs';
+import mongoose from 'mongoose';
+
+import Approval from '../Model/Approved_Model.js';
+import User from '../Model/User_Model.js';
+import Admin from '../Model/Admin_Model.js'
 
 // @desc    Register user and store in Approval collection
 // @route   POST /api/users/register
