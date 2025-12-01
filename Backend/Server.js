@@ -94,7 +94,7 @@ const server = app.listen(PORT, () => {
     
     // Self-ping to keep Render instance alive (only in production)
     if (process.env.NODE_ENV === 'production' || process.env.ENABLE_SELF_PING === 'true') {
-        const backendUrl = process.env.BACKEND_URL || `http://localhost:${PORT}`;
+        const backendUrl = process.env.BACKEND_URL || `https://decentralized-final.onrender.com`;
         
         console.log(`🔄 Self-ping enabled for: ${backendUrl}`);
         
