@@ -15,7 +15,7 @@ const app = express();
 const PORT = process.env.PORT || 5000;
 
 app.use(cors({
-    origin: "http://localhost:5173",  // allow only your frontend
+    origin: "https://decentralized-final.vercel.app",  // allow only your frontend
     credentials: true,                // allow cookies / auth headers
 }));
 app.use(express.json());
