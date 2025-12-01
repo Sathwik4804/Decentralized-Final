@@ -5,7 +5,7 @@
   "type": "module",
   "main": "Server.js",
   "scripts": {
-    "server": "nodemon server.js"
+    "server": "node Server.js"
   },
   "keywords": [],
   "author": "",
